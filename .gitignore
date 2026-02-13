@@ -1,0 +1,24 @@
+cat > .gitignore << 'EOF'
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+.virtual_documents/
+
+# Model artifacts (avoid huge files)
+*.pkl
+
+echo "*.pkl" >> .gitignore
+
+# Optional: OS/Temp
+*.log
+EOF
